@@ -14,7 +14,7 @@ class MaintenanceMiddleware(MiddlewareMixin):
 
     def process_request(self,request):
         try:
-            mode = models.MainteneceMode.objects.get(pk=1)
+            mode = models.MainteneceMode.objects.all().first()
             state = mode.status #state of mmode
         except Exception:
             return None
