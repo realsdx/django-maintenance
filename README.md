@@ -1,10 +1,8 @@
 # Maintenance mode for Django apps
 **Under development**
 
-<br>
-=====
-Maintenance Mode    
-=====
+
+## Maintenance Mode
 
 A app to show maintenance mode error page(503) to normal users.
 
