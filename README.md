@@ -1,12 +1,22 @@
 # Maintenance mode django apps
-
 *Under development*
-<br>
+
+
 =====
 Maintenance Mode    
 =====
 
 A app to show maintenance mode error page(503) to normal users.
+
+Setup
+-----------
+
+1.  Run `python setup.py sdist bdist_wheel` .<br>
+    This will generate a source archive and a python wheel package.
+
+2.  Now Run `pip install <path_to_the_package>`.<br>
+    *Use a virtual environment*
+
 
 Quick start
 -----------
