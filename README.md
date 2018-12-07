@@ -20,16 +20,27 @@ Quick start
 -----------
 
 1. Add "maintenance" to your INSTALLED_APPS setting like this::
-
+    ```
     INSTALLED_APPS = [
         ...
         'maintenance',
     ]
+    ```
+
 2.  Add 'maintenance.middleware.MaintenanceMiddleware' to last of the MIDDDLEWARE list.
+    ```
+    MIDDLEWARE = [
+    ...
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'maintenance.middleware.MaintenanceMiddleware',
+    ]
+    ```
 
 3. Include the maintenance URLconf in your project urls.py like this::
 
+    ```
     path('maintenance/', include('maintenance.urls')),
+    ```
 
 4. Run `python manage.py migrate` to create the maintenance models.
 
