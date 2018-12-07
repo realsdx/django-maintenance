@@ -1,7 +1,7 @@
-# Maintenance mode django apps
-*Under development*
+# Maintenance mode for Django apps
+**Under development**
 
-
+<br>
 =====
 Maintenance Mode    
 =====
